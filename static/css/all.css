@@ -56,7 +56,6 @@ p {
   float: left;
   margin: 0 0 0 15px;
   height: 41px;  
-  z-index: 100;
   }
 
 
@@ -697,6 +696,7 @@ p {
     margin: 0 0 23px;
     padding: 4px 0 0;
     float: none;
+    width: 100%;
     display: block; }
     .footer-holder .logo + p {
       line-height: 21px; }
@@ -762,6 +762,10 @@ p {
     .main {
       margin-top: 30px;
     }
+
+    hr {
+      max-width: 90%;
+    }
     
   }
 
@@ -785,24 +789,25 @@ p {
 
   }
 
+@media only screen and (min-width: 993px) { 
 
-  
-   @media only screen and (max-width: 480px) {
-
-    
+  .joinside {
+    margin-top: 80px;
+    float: right; 
   }
 
-   @media only screen and (max-width: 360px) {
-    
-  }
+}
 
-   @media only screen and (max-width: 240px) {
-    
-  }
 
 /* MENU CHANGE*/
 @media only screen and (max-width: 992px) { 
 
+  .joinside {
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .upcommingtravels {
     margin-top: 100px;
   }
@@ -1113,8 +1118,8 @@ p {
     padding: 3px 20px;
     min-width: 0; }
   #header .logo {
-    margin: 4px 0 10px 10px;
-    width: 130px; }
+      margin: 7px 2px 10px 8px;
+      width: 133px; }
 
   .opener-holder {
     margin: 4px 10px;
@@ -1122,7 +1127,7 @@ p {
 
 
   .toplogo {
-    width: 110%;
+    width: 100%;
     margin-top: 5px;
   }
 
@@ -1353,6 +1358,7 @@ tbody tr:hover {
 
 .placetop {
   text-align: center;
+  margin-top: 30px;
 }
 
 .placepicture {
@@ -1387,11 +1393,6 @@ tbody tr:hover {
 
   .centeredtext {
     text-align: center;
-  }
-
-  .joinside {
-    margin-top: 80px;
-    float: right; 
   }
 
   .main h3.joined {
@@ -1682,6 +1683,16 @@ tbody tr:hover {
   color:#05b68d;
 }
 
+.red {
+  color:#d43f3a;
+}
+
+.about{
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+
+
 
 /* TABLEEEEEEEEE
 Max width before this PARTICULAR table gets nasty
@@ -1706,13 +1717,14 @@ only screen and (max-width: 680px),
   
   tr { 
     border: 1px solid #31bc86;   
-    margin-top: -1px;
+    margin-top: 16px;
+    padding-bottom: 3%;
+    padding-top: 3%;
   }
   
   td { 
     /* Behave  like a "row" */
     border: none;
-    border-bottom: 1px solid #eee; 
     position: relative;
     padding-left: 50%; 
   }
@@ -1728,7 +1740,12 @@ only screen and (max-width: 680px),
   }
 
   .join {
-  width: 100px;
+    width: 100px;
+  }
+
+  .featured {
+    margin-top: 19px;
+    text-align: center;
   }
   
   /*
