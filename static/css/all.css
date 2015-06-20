@@ -55,7 +55,9 @@ p {
 .logo {
   float: left;
   margin: 0 0 0 15px;
-  height: 41px;  }
+  height: 41px;  
+  z-index: 100;
+  }
 
 
 .social-placeholder {
@@ -680,11 +682,9 @@ p {
     margin: 0 0 0 20px; }
 
 .footer-holder {
-  position: relative;
   padding: 62px 15px 92px;
   font-size: 1.4rem;
-  line-height: 1.6428571429;
-  color: #848e97; }
+  line-height: 1.6428571429; }
   .footer-holder:before {
     content: '';
     position: absolute;
@@ -710,10 +710,10 @@ p {
     padding: 0;
     list-style: none;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.3em;
     line-height: 1.55; }
     .footer-holder ul a {
-      color: #8d81ac; }
+      color: #5d5d5d; }
       .footer-holder ul a:hover {
         color: #05b68d; }
   .footer-holder .text-holder {
@@ -784,6 +784,8 @@ p {
     } 
 
   }
+
+
   
    @media only screen and (max-width: 480px) {
 
@@ -1333,8 +1335,7 @@ tbody tr:hover {
 }
 
 .join {
-  max-width: 300px;
-  min-width: 150px;
+  width: 150px;
   font-size: 1em;
 }
 
@@ -1667,4 +1668,76 @@ tbody tr:hover {
 .imagesmall {
   min-width: 50px;
   max-width: 150px;
+}
+
+.area a:hover {
+  color:#2d2d2d;
+}
+
+.events .join a:hover {
+  color:#fff;
+}
+
+.green {
+  color:#05b68d;
+}
+
+
+/* TABLEEEEEEEEE
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 680px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr { 
+    border: 1px solid #31bc86;   
+    margin-top: -1px;
+  }
+  
+  td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+  }
+  
+  td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+
+  .join {
+  width: 100px;
+  }
+  
+  /*
+  Label the data
+  */
+  td:nth-of-type(1):before { content: "Place"; }
+  td:nth-of-type(2):before { content: "Date"; }
+  td:nth-of-type(3):before { content: "Days"; }
+  td:nth-of-type(4):before { content: "Budget"; }
+  td:nth-of-type(5):before { content: "Joined"; }
+
 }
