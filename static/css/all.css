@@ -1758,3 +1758,18 @@ only screen and (max-width: 680px),
   td:nth-of-type(5):before { content: "Joined"; }
 
 }
+
+.mainhead {
+  margin: 0 0 20px;
+  font-size: 3.2em;
+  line-height: 1.148;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mainsubhead {
+  text-align: center;
+}
+
+
