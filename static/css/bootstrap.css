@@ -1071,10 +1071,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #8d81ac;
+  color: #aaa;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #665987;
+    color: #fff;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -1141,7 +1141,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: #635C73; }
+  color: #2d2d2d; }
   h1 small,
   h1 .small, h2 small,
   h2 .small, h3 small,

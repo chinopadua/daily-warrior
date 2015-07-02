@@ -43,7 +43,8 @@ p {
   width: 100%;
   overflow: hidden;
   display: table-footer-group;
-  height: 1%; }
+  height: 1%;
+  background-color: #000; }
 
 .btn-blue {
   background: #3b5998;
@@ -74,7 +75,7 @@ p {
   width: 100%;
   z-index: 99;
   padding: 31px 0 32px;
-  background: #fff;
+  background: #000;
   box-shadow: 0 1px 1px rgba(196, 194, 202, 0.23);
   -webkit-backface-visibility: hidden;
   /* Prevent Chrome bug because of on-scroll effect in other section */ }
@@ -111,7 +112,7 @@ p {
     margin: 0 0 0 34px; }
     #nav li a {
       display: block;
-      color: #000; }
+      color: #fff; }
       #nav li a:hover {
         text-decoration: none;
         color: #05b68d; }
@@ -126,7 +127,7 @@ p {
   overflow: hidden; }
 
 .nav-opener:before, .nav-opener:after, .nav-opener span {
-  background: #333;
+  background: #fff;
   border-radius: 4px;
   position: absolute;
   top: 17px;
@@ -299,7 +300,8 @@ p {
   border-radius: 40px; }
 
 .main {
-  margin-top: 150px; }
+  margin-top: 200px; }
+
   .main .content {
     padding: 25px 15px 23px;
     font-size: 1.3rem;
@@ -699,12 +701,14 @@ p {
     width: 100%;
     display: block; }
     .footer-holder .logo + p {
-      line-height: 21px; }
+      line-height: 21px;
+      color:#ddd; }
   .footer-holder h4 {
     margin: 0 0 14px;
     font-size: 1.6rem;
     line-height: 1.5;
-    font-weight: bold; }
+    font-weight: bold;
+    color:#D0D0D0; }
   .footer-holder ul {
     margin: 0;
     padding: 0;
@@ -713,7 +717,7 @@ p {
     font-size: 1.3em;
     line-height: 1.55; }
     .footer-holder ul a {
-      color: #5d5d5d; }
+      color: #969696; }
       .footer-holder ul a:hover {
         color: #05b68d; }
   .footer-holder .text-holder {
@@ -726,7 +730,7 @@ p {
     font-size: 3rem;
     line-height: 1.2; }
     .footer-holder .phone a {
-      color: #31384d; }
+      color: #05B68D; }
   .footer-holder .available {
     display: block;
     padding: 0 0 29px;
@@ -734,12 +738,13 @@ p {
     line-height: 1.3333333;
     font-weight: bold;
     text-transform: uppercase;
-    color: #848e97; }
+    color: #D0D0D0; }
   .footer-holder address {
     display: block;
     margin: -3px 0 0;
     font-style: normal;
-    line-height: 23px; }
+    line-height: 23px;
+    color:#D0D0D0; }
 
 
   @media only screen and (max-width: 1980px) {
@@ -760,7 +765,11 @@ p {
   @media only screen and (max-width: 1024px) {
 
     .main {
-      margin-top: 30px;
+      margin-top: 60px;
+    }
+
+    .checkemail {
+      margin-top: -60px;
     }
 
     hr {
@@ -769,9 +778,25 @@ p {
     
   }
 
+  @media only screen and (min-width: 1025px) {
+
+    .checkemail {
+      margin-top: -100px;
+    }
+
+    
+  }
+
    @media only screen and (max-width: 768px) {
     .landinglogo {
       width: 40%;
+    }
+
+
+    .featured {
+    margin-top: 19px;
+    text-align: center;
+    margin-bottom: -50px;
     }
 
     .testimonials {
@@ -796,6 +821,10 @@ p {
     float: right; 
   }
 
+  .joinside2 {
+    float: right; 
+  }
+
 }
 
 
@@ -808,9 +837,7 @@ p {
     padding-left: 5%;
     padding-right: 5%;
   }
-  .upcommingtravels {
-    margin-top: 100px;
-  }
+  
   .nav-opener {
     display: inline-block;
     vertical-align: top; }
@@ -1086,9 +1113,6 @@ p {
       left: 0;
       right: 0; }
 
-  .footer-holder .logo + p {
-    margin: 0 0 29px; }
-
   .footer-holder ul {
     margin: 0 0 26px; }
 
@@ -1345,8 +1369,7 @@ tbody tr:hover {
 }
 
 .featured {
-  margin-top: 150px;
-  text-align: center;
+  padding-top: 50px;
 }
 
 .ad {
@@ -1692,6 +1715,9 @@ tbody tr:hover {
   font-size: 1.2em;
 }
 
+.panelwhite {
+  border-color: #fff;
+}
 
 
 /* TABLEEEEEEEEE
@@ -1768,8 +1794,277 @@ only screen and (max-width: 680px),
   text-align: center;
 }
 
+.mainhead2 {
+  margin: 0 0 20px;
+  font-size: 2em;
+  line-height: 1.148;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+}
+
+.mainhead3 {
+  line-height: 1.148;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+}
+
 .mainsubhead {
   text-align: center;
 }
 
+.past {
+  background-color: #666;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.pasttravels {
+  margin-top: 50px;
+}
+
+.mute {
+  color: #aaa;
+}
+
+.yellow {
+  color: #FFD800;
+}
+
+.main i {
+  font-size: 0.9em;
+}
+
+.pasttravels i {
+  font-size: 0.9em;
+}
+
+.bg-semiwhite {
+  background-color: #F4F4F4;
+}
+
+.featuredimg {
+  padding-right: -10px;
+  padding-left: -10px;
+}
+
+.paddingtop50 {
+  padding-top: 50px;
+}
+
+/* Placeholder */
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*image hover effect*/
+
+.grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  /* float: left; */
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  /* width: 48%; */
+  height: auto;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+figure.effect-hera h2 {
+  font-size: 158.75%;
+}
+
+figure.effect-hera h2,
+figure.effect-hera p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+}
+
+figure.effect-hera figcaption::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  /*border: 2px solid #fff;*/
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(0,0,1);
+  transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(0,0,1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+}
+
+figure.effect-hera p {
+  width: 100px;
+  text-transform: none;
+  font-size: 121%;
+  line-height: 2;
+}
+
+figure.effect-hera p a {
+  color: #fff;
+}
+
+figure.effect-hera p a:hover,
+figure.effect-hera p a:focus {
+  opacity: 0.6;
+}
+
+figure.effect-hera p a img {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-hera p a:first-child img {
+  -webkit-transform: translate3d(-60px,-60px,0);
+  transform: translate3d(-60px,-60px,0);
+}
+
+figure.effect-hera p a:nth-child(2) img {
+  -webkit-transform: translate3d(60px,-60px,0);
+  transform: translate3d(60px,-60px,0);
+}
+
+figure.effect-hera p a:nth-child(3) img {
+  -webkit-transform: translate3d(-60px,60px,0);
+  transform: translate3d(-60px,60px,0);
+}
+
+figure.effect-hera p a:nth-child(4) img {
+  -webkit-transform: translate3d(60px,60px,0);
+  transform: translate3d(60px,60px,0);
+}
+
+figure.effect-hera:hover figcaption::before {
+  opacity: 1;
+  -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(1,1,1);
+}
+
+figure.effect-hera:hover h2 {
+  opacity: 0;
+  -webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+  transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+}
+
+figure.effect-hera:hover p img:empty {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0); /* just because it's stronger than nth-child */
+  opacity: 1;
+}
 
