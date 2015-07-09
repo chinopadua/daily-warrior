@@ -2391,20 +2391,6 @@ color:#519548;
 }
 
 
-
-.left:before {
-  content: "\f0d9";
-  font-family: 'FontAwesome';
-}
-.right:before {
-  content: "\f0da";
-    font-family: 'FontAwesome';
-}
-
-
-
-
-
 /*BOOTSTRAP ROW AND COLS*/
 .row {
   margin-right: -15px;
