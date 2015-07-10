@@ -141,6 +141,10 @@ a:hover, a:focus {
   
 
 /*MARGINS*/
+.margintop200 {
+  margin: 200px auto 0;
+}
+
 .margintop100 {
   margin: 100px auto 0;
 }

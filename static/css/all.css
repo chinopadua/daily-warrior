@@ -330,6 +330,7 @@ p {
 
 .area {
   padding: 0px 0 47px;}
+
   .area h2 {
     margin: 0 0 28px;
     font-size: 4rem;
@@ -747,22 +748,24 @@ p {
     color:#D0D0D0; }
 
 
-  @media only screen and (max-width: 1980px) {
-    
-  }
-
-  @media only screen and (max-width: 1600px) {
-    
-  }
-
-
   @media only screen and (max-width: 1280px) {
+
+    .suggestpage {
+      margin-top: 70px;
+    }
+
+    .webpostcover {
+      margin-top: 6px;
+    }
+
     .landinglogo {
       width: 26%;
     }
   }
 
   @media only screen and (max-width: 1024px) {
+
+    
 
     .main {
       margin-top: 60px;
@@ -780,6 +783,14 @@ p {
 
   @media only screen and (min-width: 1025px) {
 
+    .suggestpage {
+      margin-top: 200px;
+    }
+
+    .webpostcover {
+      margin-top: 110px;
+    }
+
     .checkemail {
       margin-top: -100px;
     }
@@ -788,10 +799,19 @@ p {
   }
 
    @media only screen and (max-width: 768px) {
+
+    .grid figure figcaption {
+      padding: 2em;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1em;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
     .landinglogo {
       width: 40%;
     }
-
 
     .featured {
     margin-top: 19px;
@@ -812,7 +832,52 @@ p {
         margin: 0 30px 36px; 
     } 
 
+    .needtobring ul {
+      margin-left: -32px;
+    }
+
+    .needtobring2 ul {
+      margin-left: -32px;
+    }
+
   }
+
+  @media only screen and (min-width: 769px) {
+
+    .grid figure figcaption {
+      padding: 2em;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .needtobring ul{
+      list-style: none;
+      margin-left: -10px;
+    }
+
+    .needtobring2 ul{
+      list-style: none;
+      margin-left: -10px;
+    }
+
+  }
+
+@media only screen and (max-width: 468px) {
+
+    .grid figure figcaption {
+      padding: 2em;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 0.6em;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+  }
+
 
 @media only screen and (min-width: 993px) { 
 
@@ -1457,11 +1522,6 @@ tbody tr:hover {
       margin-top: 16px;
     }
 
-  .needtobring ul{
-    list-style: none;
-    margin-left: -10px;
-  }
-
   .needtobring li, p{
     font-size: 1.2em;
   }
@@ -1856,26 +1916,23 @@ only screen and (max-width: 680px),
 /* Placeholder */
 ::-webkit-input-placeholder {
    text-align: center;
+   font-size: 0.7em;
 }
 
 :-moz-placeholder { /* Firefox 18- */
    text-align: center;  
+   font-size: 0.7em;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
    text-align: center;  
+   font-size: 0.7em;
 }
 
 :-ms-input-placeholder {  
    text-align: center; 
+   font-size: 0.7em;
 }
-
-
-
-
-
-
-
 
 
 
@@ -1892,7 +1949,7 @@ only screen and (max-width: 680px),
   clear: both;
   margin: 0 auto;
   padding: 1em 0 4em;
-  max-width: 1000px;
+  max-width: 1200px;
   list-style: none;
   text-align: center;
 }
@@ -1903,7 +1960,7 @@ only screen and (max-width: 680px),
   /* float: left; */
   overflow: hidden;
   margin: 10px 1%;
-  min-width: 320px;
+  /* min-width: 320px; */
   max-width: 480px;
   max-height: 360px;
   /* width: 48%; */
@@ -1921,6 +1978,7 @@ only screen and (max-width: 680px),
   margin-bottom: 10px;
 }
 
+/*
 .grid figure figcaption {
   padding: 2em;
   color: #fff;
@@ -1928,7 +1986,7 @@ only screen and (max-width: 680px),
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
+}*/
 
 .grid figure figcaption::before,
 .grid figure figcaption::after {
@@ -2076,8 +2134,8 @@ h2 .label {
 
 
 
-.carousel-control        { width:  5%; }
-.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+.carousel-control        { width:  0%; }
+.carousel-control.left,.carousel-control.right {background-image:none;}
 @media (max-width: 767px) {
   .carousel-inner .active.left { left: -100%; }
   .carousel-inner .next        { left:  100%; }
@@ -2098,4 +2156,32 @@ h2 .label {
   .carousel-inner .active.left { left: -25%; }
   .carousel-inner .next        { left:  25%; }
   .carousel-inner .prev    { left: -25%; }  
+}
+
+
+.tableclick {
+  cursor: pointer;
+}
+
+.media-object {
+  display: block;
+  max-width: 32px;
+  max-height:32px;
+}
+
+.needtobring2 li, p{
+    font-size: 1.2em;
+  }
+
+.needtobring2 .arive{
+   color: #1F8969;
+  }
+
+.needtobring2 .depart{
+   color: #B60505;
+  }
+
+.needtobring2 li i {
+  font-size: 0.6em;
+  vertical-align: 2.1px;
 }
