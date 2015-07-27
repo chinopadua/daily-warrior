@@ -181,6 +181,10 @@ a:hover, a:focus {
   margin: 10px auto 0;
 }
 
+.margintop3 {
+  margin: 3px auto 0;
+}
+
 .marginbottom100 {
   margin-bottom: 100px;
 }

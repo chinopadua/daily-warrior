@@ -4,9 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cagbalete Island</title>
-	<meta name="description" content="Tag along trip, solo or group">
-	<meta name="keywords" content="Travel, backpacking, tag along, budget travel">
-	<meta name="author" content="Chino Padua">
+	<meta name="description"			content="Join and travel with friendly travelers. Make friends and experience freedom.">
+	<meta name="keywords"				content="Travel, backpacking, tag along, budget travel, Philippines, Travelers, Backpackers, Freedom travel, #dailywarrior, Travel the world, travel crew, wanderlust, travelph, travel group experience philippines, kalanggaman island, cagbalete island, nature, camping, surfing, swimming, island hopping">
+	<meta name="author" 				content="Chino Padua">
+	<meta property="og:image" 			content="http://i.imgur.com/38WXGHG.jpg" />
 	<link rel="shortcut icon" href="static/favicons/favicon.ico">
 	<link rel="stylesheet" href="static/css/bootstrap.css">
 	<link rel="stylesheet" href="static/css/chino.css">
@@ -16,32 +17,31 @@
 </head>
 <body>
 <div id="wrapper">
-	<header id="header">
-		<div class="container">
-			<div class="logo"><a href="index.html"><img src="static/images/logowhite.svg" class="toplogo" alt="DAILY WARRIOR"></a></div>
-			<nav id="nav">
-				<div class="opener-holder">
-					<a href="#" class="nav-opener"><span></span></a>
-				</div>
-				<a href="#" class="btn btn-success rounded">Suggest</a>
-				<div class="nav-drop">
-					<ul>
-						<li class="active visible-sm visible-xs"><a href="index.html">Home</a></li>
-						<li><a href="pastdestinations.html">Past Destinations</a></li>
-						<li><a href="about.html">About DW</a></li>
-						<li><a href="faq.html">FAQ's</a></li>
-					</ul>
-					<div class="drop-holder visible-sm visible-xs">
-						<span>Follow Us</span>
-						<ul class="social-networks">
-							<li><a class="fa fa-facebook-official" href="https://www.facebook.com/dailywarriorph" target="_blank"></a></li>
-							<li><a class="fa fa-instagram" href="https://www.instagram.com/dailywarriorph" target="_blank"></a></li>
-						</ul>
+		<header id="header">
+			<div class="container">
+				<div class="logo"><a href="index2.0.html"><img src="static/images/logowhite.svg" class="toplogo" alt="DAILY WARRIOR"></a></div>
+				<nav id="nav">
+					<div class="opener-holder">
+						<a href="postanevent.html" class="nav-opener"><span></span></a>
 					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
+					<a href="postanevent.html" class="btn btn-success rounded">Post</a>
+					<div class="nav-drop">
+						<ul>
+							<li class="active visible-sm visible-xs"><a href="index2.0.html">Home</a></li>
+							<li><a href="pastdestinations.html">Past Destinations</a></li>
+							<li><a href="faq.html">FAQ's</a></li>
+						</ul>
+						<div class="drop-holder visible-sm visible-xs">
+							<span>Follow Us</span>
+							<ul class="social-networks">
+								<li><a class="fa fa-facebook-official" href="https://www.facebook.com/dailywarriorph" target="_blank"></a></li>
+								<li><a class="fa fa-instagram" href="https://www.instagram.com/dailywarriorph" target="_blank"></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
 
 	<section class="webpostcover marginbottom20">
 		<div class="container">
@@ -224,43 +224,31 @@
 							<form action="thankyou.html" method="get">
 								<div class="centeredtext">
 
-									<span class="input input--hoshi">
-										<input class="input__field input__field--hoshi" type="text" id="name" required/>
-										<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="name">
-											<span class="input__label-content input__label-content--hoshi">First Name & Last Name</span>
-										</label>
-									</span>					
+									<!--Name-->
+									<span class="input">
+										<label class="form2label form2label-content"><span>First Name & Last Name</span></label>
+										<input class="form-control" type="text" id="name" required placeholder="Juan Dela Cruz">	
+									</span>
 
-									
-										<span class="input input--hoshi">
-											<input class="input__field input__field--hoshi" type="email" id="email" required/>
-											<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="email">
-												<span class="input__label-content input__label-content--hoshi">Email</span>
-											</label>
-										</span>			
+									<!--Email-->
+									<span class="input">
+										<label class="form2label form2label-content"><span>Email</span></label>
+										<input class="form-control" type="email" id="email" required placeholder="juandelacruz@dailywarrior.ph">	
+									</span>
 
-										<span class="input input--hoshi">
-											<input class="input__field input__field--hoshi" type="text" id="number" maxlength="11" required/>
-											<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="number">
-												<span class="input__label-content input__label-content--hoshi">Mobile Number</span>
-											</label>
-										</span>
+									<!--Mobile Number-->
+									<span class="input">
+										<label class="form2label form2label-content"><span>Mobile Number</span></label>
+										<input class="form-control" type="text" id="contactnumber" required placeholder="0999 999 9999">	
+									</span>
 
-										<span class="input input--hoshi">
-											<input class="input__field input__field--hoshi" type="number" id="age" required/>
-											<label class="input__label input__label--hoshi input__label--hoshi-color-2 required" for="age">
-												<span class="input__label-content input__label-content--hoshi">Age</span>
-											</label>
-										</span>
+									<!--Message -->
+									<span class="input">
+										<label class="form2label form2label-content"><span>Message</span></label>
+										<textarea class="form-control" rows="3" type="text" id="message" placeholder="I'm allergic to peanuts"></textarea>
+									</span>	
 
-										<span class="input input--hoshi">
-											<input class="input__field input__field--hoshi" type="text" id="msg" placeholder="*I'm allergic to peanuts" />
-											<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="msg">
-												<span class="input__label-content input__label-content--hoshi">Message</span>
-											</label>
-										</span>
-
-										<a href="thankyou.html">
+										<a href="#">
 											<button type="submit" class="btn btn-success margintop10">Warrior Attack!</button>
 										</a>
 
@@ -317,19 +305,18 @@
 						</div>
 					</div>
 					<div class="col-md-3">
-						<h4>Navigation <i class="fa fa-ellipsis-v"></i></h4>
+						<h4>Navigation </h4>
 						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Past Destinations</a></li>
-							<li><a href="#">About DW</a></li>
-							<li><a href="#">Donate</a></li>
-							<li><a href="#">Merch</a></li>
+							<li><a href="index2.0.html">Home</a></li>
+							<li><a href="pastdestinations.html">Past Destinations</a></li>
+							<li><a href="about.html">About DW</a></li>
+							<li><a href="suggest.html">Contact us</a></li>
+							<li><a href="faq.html">FAQ's</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
 						<div class="text-holder">
-							<strong class="phone"><a href="tel:3475677890">347 567 78 90</a></strong>
-							<span class="available">Available from 9AM - 5PM</span>
+							<strong class="phone"><a href="tel:3475677890">+63 268 26 327</a></strong>
 							<h4>Cainta, Rizal</h4>
 							<address>7 Acapulco St. Serra Monte, Filinvest East. </address>
 						</div>

@@ -1749,6 +1749,52 @@ tbody tr:hover {
   }
 }
 
+
+/* Form2*/
+.fieldneg {
+  margin-left: 14px;
+}
+
+.fieldnegbot {
+  margin-bottom: -12px;
+}
+
+
+#field {
+    margin-bottom:20px;
+}
+
+.symbolpeso {
+    border: 1px inset #ccc;
+}
+.symbolpeso input {
+    border: 0;
+}
+
+.form2label {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 40%;
+  color: #000;
+  font-weight: bold;
+  font-size: 72%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form2label-content {
+  position: relative;
+  display: block;
+  padding: 1.6em .3em .5em;
+  width: 100%;
+}-appearance: none; /* for box shadows to show on iOS */
+}
+
 .imagesmall {
   min-width: 50px;
   max-width: 150px;
@@ -1914,27 +1960,34 @@ only screen and (max-width: 680px),
   padding-top: 50px;
 }
 
-/* Placeholder */
+/* Placeholder 
 ::-webkit-input-placeholder {
+   padding-top: 2px;
    text-align: center;
    font-size: 0.7em;
 }
 
 :-moz-placeholder { /* Firefox 18- */
+/*    padding-top: 2px;
    text-align: center;  
    font-size: 0.7em;
 }
-
+/*
 ::-moz-placeholder {  /* Firefox 19+ */
+/*   padding-top: 2px;
    text-align: center;  
    font-size: 0.7em;
 }
+*/ 
+/*
 
 :-ms-input-placeholder {  
+   padding-top: 2px;
    text-align: center; 
    font-size: 0.7em;
 }
 
+*/ 
 
 
 
