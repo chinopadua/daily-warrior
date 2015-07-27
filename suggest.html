@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Suggest a Place</title>
+	<meta name="description" content="Tag along trip, solo or group">
+	<meta name="keywords" content="Travel, backpacking, tag along, budget travel">
+	<meta name="author" content="Chino Padua">
+	<link rel="shortcut icon" href="static/favicons/favicon.ico">
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<link rel="stylesheet" href="static/css/chino.css">
+	<link rel="stylesheet" href="static/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/css/all.css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="wrapper">
+		<header id="header">
+			<div class="container">
+				<div class="logo"><a href="index.html"><img src="static/images/logowhite.svg" class="toplogo" alt="DAILY WARRIOR"></a></div>
+				<nav id="nav">
+					<div class="opener-holder">
+						<a href="#" class="nav-opener"><span></span></a>
+					</div>
+					<a href="#" class="btn btn-success rounded">Suggest</a>
+					<div class="nav-drop">
+						<ul>
+							<li class="active visible-sm visible-xs"><a href="index.html">Home</a></li>
+							<li><a href="pastdestinations.html">Past Destinations</a></li>
+							<li><a href="about.html">About DW</a></li>
+							<li><a href="faq.html">FAQ's</a></li>
+						</ul>
+						<div class="drop-holder visible-sm visible-xs">
+							<span>Follow Us</span>
+							<ul class="social-networks">
+								<li><a class="fa fa-facebook-official" href="https://www.facebook.com/dailywarriorph" target="_blank"></a></li>
+								<li><a class="fa fa-instagram" href="https://www.instagram.com/dailywarriorph" target="_blank"></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+	<section class="area suggestpage">
+		<div class="container topmenu">
+			<div class="row">
+
+				<div class="col-md-12">
+					<section class="content form">
+							<h2 class="mainhead2"> Suggest a Place</h2>
+							<form action="suggestok.html" method="get">
+								<div class="centeredtext">
+
+									<span class="input input--hoshi">
+										<input class="input__field input__field--hoshi" type="text" id="name" required/>
+										<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="name">
+											<span class="input__label-content input__label-content--hoshi">Where</span>
+										</label>
+									</span>		
+
+									<span class="input input--hoshi">
+										<input class="input__field input__field--hoshi" type="text" id="msg" placeholder="" />
+										<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="msg">
+											<span class="input__label-content input__label-content--hoshi">Message</span>
+										</label>
+									</span>
+
+									<a href="thankyou.html">
+										<button type="submit" class="btn btn-success margintop10">Warrior Attack!</button>
+									</a>
+
+								</div>
+							</form>
+					</section>				
+				</div>
+			</div>
+		</div>
+	</section>		
+									
+	<footer id="footer">
+		<div class="container">
+			<div class="footer-holder">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="logo"><a href="#"><img src="static/images/logowhite.svg" alt="DAILY WARRIOR"></a></div>
+						<p>Find <i class="fa fa-bolt"></i> Join <i class="fa fa-bolt"></i> Travel <i class="fa fa-bolt"></i> Freedom</p>
+						<div class="marginbottom10">
+							<a href="https://www.facebook.com/dailywarriorph" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
+							<a href="https://www.instagram.com/dailywarriorph" target="_blank"><i class="fa fa-instagram fa-2x  marginleft10"></i></a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<h4>Navigation <i class="fa fa-ellipsis-v"></i></h4>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Past Destinations</a></li>
+							<li><a href="#">About DW</a></li>
+							<li><a href="#">Donate</a></li>
+							<li><a href="#">Merch</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<div class="text-holder">
+							<strong class="phone"><a href="tel:3475677890">347 567 78 90</a></strong>
+							<span class="available">Available from 9AM - 5PM</span>
+							<h4>Cainta, Rizal</h4>
+							<address>7 Acapulco St. Serra Monte, Filinvest East. </address>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="static/js/jquery-1.11.2.min.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script src="static/js/jquery.main.js"></script>
+<script src="static/js/classie.js"></script>
+<script>
+	(function() {
+	// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+	if (!String.prototype.trim) {
+		(function() {
+		// Make sure we trim BOM and NBSP
+			var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+			String.prototype.trim = function() {
+			return this.replace(rtrim, '');
+			};
+		})();
+	}
+
+	[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+	// in case the input is already filled..
+	if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+	}
+
+	// events:
+	inputEl.addEventListener( 'focus', onInputFocus );
+	inputEl.addEventListener( 'blur', onInputBlur );
+	} );
+
+	function onInputFocus( ev ) {
+		classie.add( ev.target.parentNode, 'input--filled' );
+	}
+
+	function onInputBlur( ev ) {
+		if( ev.target.value.trim() === '' ) {
+							classie.remove( ev.target.parentNode, 'input--filled' );
+			}
+		}
+	})();
+</script>
+<script src="static/js/imgs.js"></script>
+</body>
+</html>
